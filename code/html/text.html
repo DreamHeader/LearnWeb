@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>来看我了是吧</title>
+</head>
+
+<body background="../../ImageSource/myImage.png">
+    <p style="font-size: 20">HTML表格</p>
+    <!-- 表格由 <table> 标签来定义。每个表格均有若干行（由 <tr> 标签定义），
+     每行被分割为若干单元格（由 <td> 标签定义）。字母 td 指表格数据（table data）
+     ，即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。 -->
+    <table border="1">
+        <tr>
+            <th>Heading</th>
+        </tr>
+        <tr>
+            <td>1-1</td>
+            <td>1-2</td>
+        </tr>
+        <tr>
+            <td>2-1</td>
+            <td>2-1</td>
+        </tr>
+    </table>
+    <!-- 无序列表 -->
+    <h1>一个无序列表</h1>
+    <ul>
+        <li>浮神</li>
+        <li>kaiGod</li>
+    </ul>
+    <!-- 有序列表 -->
+    <ol start="10">
+        <li>UZI-Attact:3000</li>
+        <li>LWX-Attact:2000</li>
+    </ol>
+    <!-- 定义列表 -->
+    <dl>
+        <dt>coffe</dt>
+        <dd>balce</dd>
+    </dl>
+    <!-- HTML的块元素 内联元素  -->
+    <!-- <div> 元素没有特定的含义。除此之外，由于它属于块级元素，浏览器会在其前后显示折行。 -->
+    <div style="background-color: aqua">
+        <h3>div的一个H3标签</h3>
+        <p>DIV的P标签</p>
+    </div>
+    <p>我真的是<span style="color: brown">好喜欢你</span></p>
+    <!-- HTML类 -->
+
+
+    <!-- <script>标签</script> -->
+    <script type="text/javascript">
+        document.write("hellow world")
+    </script>
+    <!-- 表单 form -->
+    <form action="action_page.php" method="POST">
+        First name:<br>
+        <input type="text" name="firstname" id="">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" id="">
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="">
+        <input type="radio" name="sex" value="male">male </br>
+        <input type="radio" name="sex" value="remale">remale
+    </form>
+    <!-- 用 <fieldset> 组合表单数据
+            <fieldset> 元素组合表单中的相关数据
+            <legend> 元素为 <ƒfieldset> 元素定义标题。 -->
+    <form action="" target="_blank" accept-charset="utf-8" method="POST">
+        <fieldset>
+            <legend>Person infomation</legend>
+            First name:<br>
+            <input type="text" name="firstname" value="Mickey">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <!-- HTML 表单元素 -->
+    <!-- select元素 -->
+    <form action="">
+        <select name="cars" id="">
+            <option value="sss">sss</option>
+            <option value="aaa">aaa</option>
+            <option value="bbb">bbb</option>
+            <option value="ccc" selected>ccc</option>
+        </select>
+        <input type="submit">
+    </form>
+    <!-- <textarea> 元素
+        <textarea> 元素定义多行输入字段（文本域）： -->
+    <textarea name="message" id="" cols="30" rows="10">
+        The cat was playing in the garden.
+     </textarea>
+    <!-- button按钮 -->
+    <button type="button" onclick="alert('你好')">FDK</button>
+    <!-- HTML5 表单元素
+     HTML5 增加了如下表单元素：
+     <datalist>
+     <keygen>
+     <output>
+     注释：默认地，浏览器不会显示未知元素。新元素不会破坏您的页面。
+     注释：Safari 或 IE9（以及更早的版本）不支持 datalist 标签。  -->
+    <form action="/demo/demo_form.asp">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit">
+    </form>
+    <!-- password 密码框 -->
+    <form action="">
+        账号: <input type="text">
+        </br>
+        密码: <input type="password">
+        <input type="submit" value="fdk体检">
+    </form>
+    <!-- 复选框  checkbox-->
+    <form action="">
+        <input type="checkbox" name="" id="" value="Bike">Bike
+        <input type="checkbox" name="" id="" value="cars">cars
+    </form>
+    <!-- 输入类型：number
+            <input type="number"> 用于应该包含数字值的输入字段。
+            您能够对数字做出限制。
+            根据浏览器支持，限制可应用到输入字段。 -->
+
+
+
+</body>
+
+</html>
