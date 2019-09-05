@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 向 HTML 添加新元素 -->
+    <!-- 已添加的 JavaScript 语句 document.createElement("myHero")，仅适用于 IE。 -->
+    <!-- 注意：Internet Explorer 8 以及更早的版本，不允许对未知元素添加样式。 -->
+    <script>
+        document.createElement("myHero")
+    </script>
+    <!-- 幸运的是，Sjoerd Visscher 创造了 "HTML5 Enabling JavaScript", "the shiv"： -->
+    <!--[if lt IE 9]-->
+    <!-- <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
+    <!--[endif]-->
+    <!-- 引用 shiv 代码的链接必须位于 <head> 元素中，因为 Internet Explorer 需要在读取之前认识所有新元素。 -->
+    <style>
+        myHero {
+            display: block;
+            background-color: #ddd;
+            padding: 50px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <myHero>My First Hero</myHero>
+
+    <article>
+        London is the capital city of England.
+        It is the most populous city in the United Kingdom,
+        with a metropolitan area of over 13 million inhabitants.
+    </article>
+</body>
+
+</html>
