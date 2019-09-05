@@ -1,0 +1,23 @@
+/* CSS 语法
+CSS 规则由两个主要的部分构成：选择器，以及一条或多条声明 */
+/* selector {declaration1; declaration2; ... declarationN } */
+
+body{
+    color: black;
+    background-color: aquamarine;
+    align-content: center;
+    text-align: center;
+}
+/* CSS 高级语法 */
+h1,h2{
+    color: blueviolet
+}
+h1 strong{
+    font: 100
+}
+/* id 选择器 */
+/* id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。
+id 选择器以 "#" 来定义。 */
+#commonTextStyle{
+    color: goldenrod
+}
