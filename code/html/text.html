@@ -136,7 +136,124 @@
             <input type="number"> 用于应该包含数字值的输入字段。
             您能够对数字做出限制。
             根据浏览器支持，限制可应用到输入字段。 -->
+    <form action="">
+        <input type="number" name="" id="" min="0" max="10">
+        </br>
+        <input type="date" name="" id="" max="2019-10-01">
+        </br>
+        <input type="month" name="bdaymonth">
+        </br>
+        <input type="week" name="week_year">
+        </br>
+        <input type="time" name="usr_time">
+        </br>
+        <!-- 注释：Chrome、Firefox 或 Internet Explorer 不支持 type="datetime"。 -->
+        <input type="datetime" name="bdaytime">
+        <input type="datetime-local" name="bdaytime">
+        </br>
+        <input type="color" name="favcolor">
+        </br>
+        <input type="range" name="points" min="0" max="10">
+        </br>
+        <input type="email" name="email">
+        </br>
+        <input type="search" name="googlesearch">
+        <input type="tel" name="usrtel">
+        <input type="url" name="homepage">
+    </form>
+    <!--    disabled	规定输入字段应该被禁用。
+            max	规定输入字段的最大值。
+            maxlength	规定输入字段的最大字符数。
+            min	规定输入字段的最小值。
+            pattern	规定通过其检查输入值的正则表达式。
+            readonly	规定输入字段为只读（无法修改）。
+            required	规定输入字段是必需的（必需填写）。
+            size	规定输入字段的宽度（以字符计）。
+            step	规定输入字段的合法数字间隔。
+            value	规定输入字段的默认值。 -->
 
+    <!-- value 属性
+            value 属性规定输入字段的初始值     -->
+    <form action="">
+        First name:<br>
+        <input type="text" name="firstname" value="John">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname">
+        <!-- readonly -->
+        <input type="text" name="readonlyfirstname" value="John" readonly>
+        <br>
+        <!-- disabled -->
+        <input type="text" name="firstnamedisabled" value="John" disabled>
+        <br>
+        <!-- size规定输入字符的个数 -->
+        <input type="text" name="firstname" value="John" size="15">
+        <br>
+        maxlength name:<br>
+        <input type="text" name="maxlength" maxlength="10" placeholder="333ßß">
+        <!-- autocomplete 属性
+        autocomplete 属性规定表单或输入字段是否应该自动完成。
+        当自动完成开启，浏览器会基于用户之前的输入值自动填写值。
+        提示：您可以把表单的 autocomplete 设置为 on，同时把特定的输入字段设置为 
+        off，反之亦然。autocomplete 属性适用于 <form> 以及如下 <input> 
+        类型：text、search、url、tel、email、password、datepickers、range 
+        以及 color。 -->
+        <!-- novalidate代表不对表单数据进行验证 -->
+        <form action="action_page.php" autocomplete="on" novalidate>
+            First name:<input type="text" name="fname"><br>
+            Last name: <input type="text" name="lname"><br>
+            E-mail: <input type="email" name="email" autocomplete="off"><br>
+            <input type="submit">
+        </form>
+        <!-- autofocus 跟Oc的 firstResponder 一个意思的-->
+        <!-- formaction 属性
+        formaction 属性规定当提交表单时处理该输入控件的文件的 URL。 -->
+        <form action="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="" autofocus>
+            <input type="submit" name="" id="" value="输入">
+            <br>
+            <input type="submit" name="" id="" formaction="" value="以管理员身份提交">
+            <!-- formenctype 属性
+            formenctype 属性规定当把表单数据（form-data）提交至服务器时如何对其进行编码
+            （仅针对 method="post" 的表单）。 -->
+            <input type="submit" formenctype="multipart/form-data" value="以 Multipart/form-data 编码提交" />
+            <!-- formmethod 属性
+            formmethod 属性定义用以向 action URL 发送表单数据（form-data）的 HTTP 方法。 -->
+            <input type="submit" formmethod="post" formaction="demo_post.asp" value="Submit using POST">
+            <br>
+            <!-- formnovalidate 属性
+            如果设置，则规定在提交表单时不对 <input> 元素进行验证。
+            formnovalidate 属性覆盖 <form> 元素的 novalidate 属性。 -->
+            <input type="submit" formnovalidate value="Submit without validation">
+            <br>
+            <!-- formtarget 属性 -->
+            <!-- formtarget 属性规定的名称或关键词指示提交表单后在何处显示接收到的响应。 -->
+            <input type="submit" formtarget="_blank" value="Submit to a new window">
+
+        </form>
+    </form>
+    <!-- list属性的使用 -->
+    <input list="cars" />
+    <datalist id="cars">
+        <option value="BMW">
+        <option value="Ford">
+        <option value="Volvo">
+    </datalist>
+
+    <!-- multiple  和input 的 type 为 file -->
+    <form action="/example/html5/demo_form.asp" method="get">
+        选择图片：
+        <input type="file" name="img" multiple="multiple" />
+        <input type="submit" />
+    </form>
+    <!-- pattern 属性
+    pattern 属性规定用于检查 <input> 元素值的正则表达式。 -->
+    <form action="/example/html5/demo_form.asp" method="get">
+        国家代码：
+        <input type="text" name="country_code" pattern="[A-z]{3}" title="三个字母的国家代码" />
+        <input type="submit" />
+    </form>
 
 
 </body>
