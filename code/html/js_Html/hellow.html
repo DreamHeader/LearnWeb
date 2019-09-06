@@ -1,17 +1,49 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../../css/hello.css">
+    <style>
+        /* 属性选择器 css*/
+        [title] {
+            color: red;
+        }
+
+        [title=W3School] {
+            border: 5px solid blue;
+        }
+        [title ~=FDK]{
+            background-color: blue;
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        <p>你好啊~</p>
-        <br>
-        <h1 id="commonTextStyle">wo cao </h1>
-        <h3>wo kao</h3>
+    <p id="commonTextStyle" class="center">testCss</p>
+    <div id="testCss">
+        nihao
     </div>
+
+    <div class="center">
+        <section>
+            找 名字叫 center 类名 下！！的section的标签
+        </section>
+        <br>
+        <p>试试效果</p>
+    </div>
+
+    <section class="center">
+        找 所有 session标签 中 名字叫 center的标签。
+    </section>
+    <br>
+    <!-- 属性选择器的使用 -->
+    <h2  title="Hello world">Hello world</h2>
+    <!--属性选择器的使用 ~= -->
+    <h2 title="FDK123">1111</h2>
+    <h2 title="FDK356">2222</h2>
 </body>
+
 </html>
