@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/testCss.css">
+    <style>
+    body{
+        background-image: url(../../../ImageSource/myImage.png);
+        background-repeat:repeat-y;
+        background-position: center center;  /*50% 50%*/  
+        /* 图像放置关键字最容易理解，其作用如其名称所表明的。例如，top right 使图像放置在元素内边距区的右上角。
+        根据规范，位置关键字可以按任何顺序出现，只要保证不超过两个关键字 - 一个对应水平方向，另一个对应垂直方向。
+        如果只出现一个关键字，则认为另一个关键字是 center。 */
+        /* center	center center
+        top	top center 或 center top
+        bottom	bottom center 或 center bottom
+        right	right center 或 center right
+        left	left center 或 center left */
+
+        /* 长度值
+        长度值解释的是元素内边距区左上角的偏移。偏移点是图像的左上角。
+        background-position:50px 100px; */
+        
+        background-attachment: fixed;
+    }
+    </style>
+</head>
+<body>
+    <p>我是个有css的P标签哦</p>
+    <p id="pCss">首行要缩进首行要缩进首行要缩进首行要缩进首行要缩进首
+        行要缩进首行要缩进首行要缩进首行要缩进首行要缩进首行要缩进首行要缩进
+        首行要缩进首行要缩进首行要缩进首行要缩进首行要缩进首行要缩进首行要缩进
+    </p>
+</body>
+</html>

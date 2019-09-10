@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../../css/hello.css">
+    <link rel="stylesheet" href="../../css/hello.css"> 
     <style>
         /* 属性选择器 css*/
         [title] {
@@ -15,10 +15,46 @@
         [title=W3School] {
             border: 5px solid blue;
         }
-        [title ~=FDK]{
+
+        [title~=FDK] {
             background-color: blue;
         }
+
+        /* 设置表单的样式
+        属性选择器在为不带有 class 或 id 的表单设置样式时特别有用： */
+        input[type="text"] {
+            width: 150px;
+            display: block;
+            margin-bottom: 10px;
+            background-color: yellow;
+            font-family: Verdana, Arial;
+        }
+
+        /*  [attribute]	用于选取带有指定属性的元素。
+        [attribute=value]	用于选取带有指定属性和值的元素。
+        [attribute~=value]	用于选取属性值中包含指定词汇的元素。
+        [attribute 1=value]用于选取带有以指定值开头的属性值的元素，该值必须是整个单词。
+        [attribute^=value]	匹配属性值以指定值开头的每个元素。
+        [attribute$=value]	匹配属性值以指定值结尾的每个元素。
+        [attribute*=value]	匹配属性值中包含指定值的每个元素。 */
     </style>
+    <!-- 多重样式
+    如果某些属性在不同的样式表中被同样的选择器定义，那么属性值将从更具体的样式表中被继承过来。 -->
+    <!-- 例如，外部样式表拥有针对 h3 选择器的三个属性：   
+    h3 {
+        color: red;
+        text-align: left;
+        font-size: 8pt;
+        }
+        而内部样式表拥有针对 h3 选择器的两个属性：
+        h3 {
+        text-align: right; 
+        font-size: 20pt;
+        }
+        假如拥有内部样式表的这个页面同时与外部样式表链接，那么 h3 得到的样式是：
+        color: red; 
+        text-align: right; 
+        font-size: 20pt; -->
 </head>
 
 <body>
@@ -40,7 +76,7 @@
     </section>
     <br>
     <!-- 属性选择器的使用 -->
-    <h2  title="Hello world">Hello world</h2>
+    <h2 title="Hello world">Hello world</h2>
     <!--属性选择器的使用 ~= -->
     <h2 title="FDK123">1111</h2>
     <h2 title="FDK356">2222</h2>

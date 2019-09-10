@@ -1,0 +1,23 @@
+/* CSS背景 */
+/* CSS 允许应用纯色作为背景，也允许使用背景图像创建相当复杂的效果。
+CSS 在这方面的能力远远在 HTML 之上。 */
+p{
+    background-color: aquamarine;
+    padding: 20px; 
+    text-align: center;
+    justify-content: center;
+    word-spacing: 0cm;
+}
+/* CSS 文本 */
+/* CSS 提供了 text-indent 属性，该属性可以方便地实现文本缩进。 */
+/* 注意：一般来说，可以为所有块级元素应用 text-indent，
+但无法将该属性应用于行内元素，图像之类的替换元素上也无法应用 text-indent 属性。
+不过，如果一个块级元素（比如段落）的首行中有一个图像，它会随该行的其余文本移动。 */
+/* text-indent 可以使用所有长度单位，包括百分比值。 */
+#pCss{
+    color: blue;
+    word-spacing: 0.5em;
+    /* letter-spacing: 0.5em; */
+     /* text-indent: -5em;
+     padding-left: 5em; */
+}
