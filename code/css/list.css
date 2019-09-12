@@ -1,0 +1,10 @@
+/* CSS 列表
+从某种意义上讲，不是描述性的文
+本的任何内容都可以认为是列表。人口普查、太阳系、家谱、参观菜单，
+甚至你的所有朋友都可以表示为一个列表或者是列表的列表。 */
+ul {
+    list-style-type : square;
+}
+ul li{
+    list-style-image: url(../../ImageSource/fendi.png); 
+}
