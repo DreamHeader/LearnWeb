@@ -3,8 +3,91 @@
 本的任何内容都可以认为是列表。人口普查、太阳系、家谱、参观菜单，
 甚至你的所有朋友都可以表示为一个列表或者是列表的列表。 */
 ul {
-    list-style-type : square;
+    list-style-type: square;
 }
-ul li{
-    list-style-image: url(../../ImageSource/fendi.png); 
+
+ul li {
+    list-style-image: url(../../ImageSource/fendi.png);
+    list-style-position: inside;
 }
+
+/* css表格 */
+table {
+    /* 这个属性能让表格内边框变为单边框 */
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    /* border-spacing: 5px 5px; */
+    caption-side: top;
+    /* 设置显示单元、行和列的算法。 */
+    table-layout: fixed;
+
+}
+
+th {
+    border: 1px solid black;
+    height: 50px;
+    background-color: aqua;
+}
+
+td {
+    border: 1px solid black;
+    height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+    padding: 15px;
+}
+
+/* CSS轮廓 */
+p.dotted {
+    outline-style: dotted;
+    outline-width: 3px;
+}
+
+p.dashed {
+    outline-style: dashed
+}
+
+p.solid {
+    outline-style: solid
+}
+
+p.double {
+    outline-style: double
+}
+
+p.groove {
+    outline-style: groove
+}
+
+p.ridge {
+    outline-style: ridge
+}
+
+p.inset {
+    outline-style: inset
+}
+
+p.outset {
+    outline-style: outset
+}
+
+/* CSS 框模型概述
+CSS 框模型 (Box Model) 规定了元素框处理元素内容、内边距、边框 和 外边距 的方式。 */
+/* padding 内边距
+    margin  外边距 
+    border 边框 */
+/* 元素框的最内部分是实际的内容 */
+/* 内边距的百分比数值
+前面提到过，可以为元素的内边距设置百分数值。百分数值是相对于其父元素的 
+width 计算的，这一点与外边距一样。所以，如果父元素的 width 改变，它们也会改变。
+下面这条规则把段落的内边距设置为父元素 width 的 10%：
+p {padding: 10%;} */
+/* padding-top
+padding-right
+padding-bottom
+padding-left */
+
+/* CSS边框
+元素的边框 (border) 是围绕元素内容和内边距的一条或多条线。
+CSS border 属性允许你规定元素边框的样式、宽度和颜色。 */
