@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 定位和浮动</title>
+    <!-- 
+    static你就当没写这一句话
+    releative是相对于自己的div的定位
+    absolute是相对于父元素设置了releative的元素定位
+    fixed是相对于整个屏幕的定位 
+    -->
+    <style>
+        h2.pos_left {
+            position: relative;
+            left: -20px;
+        }
+
+        h2.pos_right {
+            position: relative;
+            left: 20px;
+        }
+
+        h2.pos_abs {
+            position: absolute;
+            left: 100px;
+            top: 150px;
+        }
+
+        p.one {
+            position: fixed;
+            left: 5px;
+            top: 200px;
+        }
+
+        p.two {
+            position: fixed;
+            top: 100px;
+            right: 5px;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+        }
+
+        img.clip {
+            position: absolute;
+            clip: rect(0px 50px 200px 0px);
+            top: 350px;
+        }
+
+        div {
+            /* hidden  scroll 默认值是 visible  */
+            overflow: scroll;
+            background-color: #00FFFF;
+            width: 150px;
+            height: 150px;
+        }
+
+        img.top {
+            vertical-align: text-top
+        }
+
+        img.bottom {
+            vertical-align: text-bottom
+        }
+
+        img.z-index {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 相对定位 -->
+    <h2>正常的标题位置</h2>
+    <h2 class="pos_left">这个标题相对于其正常位置向左移动</h2>
+    <h2 class="pos_right">这个标题相对于其正常位置向右移动</h2>
+    <!-- 绝对定位 -->
+    <h2 class="pos_abs">绝对定位</h2>
+    <!-- fix定位 -->
+    <p class="one">fix定位1</p>
+    <p class="two">fix定位2</p>
+
+    <h1>This is a Heading</h1>
+    <img src="../../../ImageSource/eg_sun.gif" alt="" srcset="" class="normal">
+    <p>一些文本，一些文本，一些文本，一些文本</p>
+    <div>
+        这个属性定义溢出元素内容区的内容会如何处理。如果值为 scroll，不论是否需要，用户代理都会提供一种滚动机制。因此，有可能即使元素框中可以放下所有内容也会出现滚动条。默认值是 visible。
+    </div>
+    <img src="../../../ImageSource/fendi.png" alt="" class="z-index">
+    <img class="clip" width="120" height="151" src="../../../ImageSource/fendi.png" alt="">
+</body>
+
+</html>
